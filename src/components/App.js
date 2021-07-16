@@ -1,9 +1,8 @@
-import React from "react";
-import "./App";
-import "./QuoteBox";
+// import React, { Component } from "react";
+import QuoteBox from "./QuoteBox";
 function App() {
   return (
-    <div className="App">
+    <div className="App flex flex-col items-center justify-center text-center">
       <QuoteBox />
     </div>
   );
