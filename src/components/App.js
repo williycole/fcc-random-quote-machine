@@ -1,4 +1,3 @@
-// import React, { Component } from "react";
 import QuoteBox from "./QuoteBox";
 function App() {
   return (

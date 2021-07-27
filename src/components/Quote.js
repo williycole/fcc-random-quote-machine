@@ -1,4 +1,6 @@
+import { VscChromeMinimize } from "react-icons/vsc";
 import { useEffect, useState } from "react";
+
 const Quote = () => {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
@@ -28,10 +30,38 @@ const Quote = () => {
   }
 
   return (
-    <div>
-      <h1 id="text">{author}</h1>
-      <h2 id="author">{quote}</h2>
-      <button id="new-quote" onClick={fetchData}>
+    <div className="flex flex-col justify-evenly items-center text-center">
+      <h1>Random Tech Quote Generator</h1>
+      <div className="flex flex-col justify-center items-start w-10/12 px-1 pt-4 pb-60 bg-darkPurple text-brightGreen border-brightGreen border-2 leading-9 font-mono text-sm font-medium rounded-md">
+        <p className="text-left w-full">
+          <span className="text-redPink">
+            quoteBot
+            <span role="img" aria-label="robot face">
+              🤖
+            </span>
+            <span role="img" aria-label="fire">
+              🔥
+            </span>
+            <span role="img" aria-label="sign of the horns">
+              🤘
+            </span>
+          </span>
+          <span className="text-offYellow">~/quoteProject</span>
+        </p>
+        <div className="flex flex-row justify-start">
+          <div id="quote-container" className="inline  w-full text-left">
+            <p className="inline">$</p>
+            <VscChromeMinimize className="inline text-3xl md:text-5xl mt-4 md:mt-6 animate-pulse-fast" />
+            <h1 id="text" className="inline px-1">
+              {author}:
+            </h1>
+            <h2 id="author" className="inline">
+              {quote}
+            </h2>
+          </div>
+        </div>
+      </div>
+      <button id="new-quote" onClick={fetchData} className="text-center">
         Get New Quote
       </button>
     </div>

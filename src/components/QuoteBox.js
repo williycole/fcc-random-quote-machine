@@ -1,13 +1,14 @@
 import Quote from "./Quote";
+import Tweet from "./Tweet";
 
 const QuoteBox = (props) => {
   return (
-    <div id="quote-box">
+    <div
+      id="quote-box"
+      className="flex flex-col items-center justify-center text-center"
+    >
       <Quote />
-
-      <a id="tweet-quote" href="twitter.com/intent/tweet">
-        <p>Tweet Me</p>
-      </a>
+      <Tweet />
     </div>
   );
 };
