@@ -32,6 +32,21 @@ const Quote = () => {
   return (
     <div className="flex flex-col justify-evenly items-center text-center">
       <h1>Random Tech Quote Generator</h1>
+
+      {/*
+
+
+      Maybe use overflow and fixed sizes like you would in a terminal
+      Maybe use overflow and fixed sizes like you would in a terminal
+      Maybe use overflow and fixed sizes like you would in a terminal
+      Maybe use overflow and fixed sizes like you would in a terminal
+      Maybe use overflow and fixed sizes like you would in a terminal
+
+
+
+
+      */}
+
       <div className="flex flex-col justify-center items-start w-10/12 px-1 pt-4 pb-60 bg-darkPurple text-brightGreen border-brightGreen border-2 leading-9 font-mono text-sm font-medium rounded-md">
         <p className="text-left w-full">
           <span className="text-redPink">

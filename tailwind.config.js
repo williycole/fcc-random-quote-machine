@@ -15,13 +15,13 @@ module.exports = {
         redPink: "#C87692",
         backgroundOpac: "#999393ad",
       },
-      textColor: {
-        orange: "#f73404",
-        lightTan: "#fbf7d6",
-        lightBlue: "#a5ebff",
-        darkBlue: "#1f1c3d",
-        backgroundOpac: "#999393ad",
-      },
+      // textColor: {
+      //   orange: "#f73404",
+      //   lightTan: "#fbf7d6",
+      //   lightBlue: "#a5ebff",
+      //   darkBlue: "#1f1c3d",
+      //   backgroundOpac: "#999393ad",
+      // },
     },
   },
   variants: {
