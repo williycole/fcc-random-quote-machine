@@ -4,14 +4,11 @@
 #------------------------------------------------------------------------------------------
 
 #Testing
-/* /index.html 200
-
-#Kind of Worked
-#/* http://quotes.stormconsultancy.co.uk/random.json/:splat 200!
-
+/api/* http://quotes.stormconsultancy.co.uk/random.json/:splat 200!
 #------------------------------------------------------------------------------------------
 
 #Did not work
+#/* http://quotes.stormconsultancy.co.uk/random.json/:splat 200!
 #/api/* http://quotes.stormconsultancy.co.uk/random.json/:splat 200!
 #/api/fetchData http://quotes.stormconsultancy.co.uk/random.json/:splat 200!
 #/random.json/* http://quotes.stormconsultancy.co.uk/random.json/:splat 200!
