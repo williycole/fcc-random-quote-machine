@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "http://quotes.stormconsultancy.co.uk/random.json/*"
-  to = "https://quotes.stormconsultancy.co.uk/random.json/:splat"
-  status = 200
-  force = true
