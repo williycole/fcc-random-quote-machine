@@ -1,2 +1,0 @@
-# Redirects API Fetch from HTTP to HTTPS
-http://quotes.stormconsultancy.co.uk/random.json/* https://quotes.stormconsultancy.co.uk/random.json/:splat 200!
