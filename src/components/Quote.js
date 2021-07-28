@@ -15,10 +15,8 @@ const Quote = () => {
 
     const json = await res.json();
     console.log(json);
-    (function () {
-      setAuthor(json.author);
-      setQuote(json.quote);
-    })();
+    setAuthor(json.author);
+    setQuote(json.quote);
   }
 
   return (
