@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import TerminalPath from "./TerminalPath";
 
 const Quote = () => {
-  const [quote, setQuote] = useState("");
+  const [content, setQuote] = useState("");
   const [author, setAuthor] = useState("");
 
   useEffect(() => {
@@ -11,12 +11,13 @@ const Quote = () => {
   }, []);
 
   async function fetchData() {
-    const res = await fetch("http://quotes.stormconsultancy.co.uk/random.json");
+    const res = await fetch("https://api.quotable.io/random?tags=technology");
 
     const json = await res.json();
     console.log(json);
+    console.log(json.content);
     setAuthor(json.author);
-    setQuote(json.quote);
+    setQuote(json.content);
   }
 
   return (
@@ -48,7 +49,7 @@ const Quote = () => {
                 {author}:
               </h1>
               <h2 id="author" className="inline">
-                {quote}
+                {content}
               </h2>
             </div>
           </div>
@@ -67,7 +68,7 @@ const Quote = () => {
           className="text-pinkPurple hover:text-brightGreen"
           href={encodeURI(
             "https://twitter.com/intent/tweet?hashtags=quotes&text=" +
-              quote +
+              content +
               " " +
               author
           )}
