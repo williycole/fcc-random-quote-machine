@@ -10,10 +10,10 @@ const Quote = () => {
     fetchData();
   }, []);
 
-  function fetchData() {
-    const res = fetch("http://quotes.stormconsultancy.co.uk/random.json");
+  async function fetchData() {
+    const res = await fetch("http://quotes.stormconsultancy.co.uk/random.json");
 
-    const json = res.json();
+    const json = await res.json();
     console.log(json);
     (function () {
       setAuthor(json.author);
