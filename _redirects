@@ -1,5 +1,1 @@
-#Example Redirect
-#/api/* http://endpoint.com/api/:splat 200!
-
-#Actual Redirect
 /api/* http://quotes.stormconsultancy.co.uk/random.json/:splat 200!
