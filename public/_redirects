@@ -5,8 +5,8 @@
 
 #Testing
 
-#/api/*                 http://quotes.stormconsultancy.co.uk/random.json/:splat         200!
-/*                     http://quotes.stormconsultancy.co.uk/random.json/:splat         200!
+/api/*                 http://quotes.stormconsultancy.co.uk/random.json/:splat         200!
+#/*                     http://quotes.stormconsultancy.co.uk/random.json/:splat         200!
 
 
 
