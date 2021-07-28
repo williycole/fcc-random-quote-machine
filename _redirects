@@ -1,1 +1,9 @@
-/random.json/* http://quotes.stormconsultancy.co.uk/random.json/:splat 200!
+#/api/* http://endpoint.com/api/:splat 200!
+/./components/Quote/* http://quotes.stormconsultancy.co.uk/random.json/:splat 200!
+#/* http://quotes.stormconsultancy.co.uk/random.json/:splat 200!
+
+
+
+
+
+#/random.json/* http://quotes.stormconsultancy.co.uk/random.json/:splat 200!
