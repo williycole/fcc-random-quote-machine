@@ -4,7 +4,7 @@
 
 
 #Testing
-/api/* http://quotes.stormconsultancy.co.uk/random.json/:splat 200!
+/api/fetchData http://quotes.stormconsultancy.co.uk/random.json/:splat 200!
 #Kind of Worked
 #/*                     http://quotes.stormconsultancy.co.uk/random.json/:splat         200!
 
