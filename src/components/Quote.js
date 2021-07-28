@@ -10,24 +10,15 @@ const Quote = () => {
     fetchData();
   }, []);
 
-  async function fetchData() {
-    // Backup incase other api has trouble in the future
-    // const randomizer = Math.floor(Math.random() * (100 - 1 + 1)) + 1; // props maybe from parent component? need to use with button to generate
+  function fetchData() {
+    const res = fetch("http://quotes.stormconsultancy.co.uk/random.json");
 
-    const res = await fetch(
-      //Backup incase other api has trouble in the future
-      // "https://gist.githubusercontent.com/natebass/b0a548425a73bdf8ea5c618149fe1fce/raw/f4231cd5961f026264bb6bb3a6c41671b044f1f4/quotes.json"
-      "http://quotes.stormconsultancy.co.uk/random.json"
-    );
-
-    const json = await res.json();
+    const json = res.json();
     console.log(json);
-    // Backup incase other api has trouble in the future
-    // setAuthor(json[randomizer].author);
-    // setQuote(json[randomizer].quote);
-
-    setAuthor(json.author);
-    setQuote(json.quote);
+    (function () {
+      setAuthor(json.author);
+      setQuote(json.quote);
+    })();
   }
 
   return (
